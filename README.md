@@ -6,8 +6,39 @@
 The Kanin Tutorials are several things:
 
 1. In-depth documentation for Kanin, the LFE RabbitMQ client library;
-1. An LFE port of the [Erlang RabbitMQ Tutorial code](https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/erlang); and,
+1. An LFE port of the [Erlang RabbitMQ Tutorial code](https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/erlang); and, to a certain extent,
 1. An LFE conversion of the [Python RabbitMQ tutorials](http://www.rabbitmq.com/tutorials/tutorial-one-python.html)
+
+
+## About RabbitMQ
+
+RabbitMQ is a message broker. The principal idea is pretty simple: it accepts
+and forwards messages. You can think about it as a post office: when you send
+mail to the post box you're pretty sure that Mr. Postman will eventually deliver
+the mail to your recipient. Using this metaphor RabbitMQ is a post box, a post
+office and a postman.
+
+The major difference between RabbitMQ and the post office is the fact that it
+doesn't deal with paper, instead it accepts, stores and forwards binary blobs of
+data ‒ messages.
+
+RabbitMQ, and messaging in general, uses some jargon.
+
+* **Producer** - Producing means nothing more than sending. A program   that
+  sends messages is a producer.
+
+* **Queue** - A queue is the name for a mailbox. It lives inside RabbitMQ.
+  Although messages flow through RabbitMQ and your applications, they can be
+  stored only inside a queue. A queue is not bound by any limits, it can store
+  as many messages as you like ‒ it's essentially an infinite buffer. Many
+  producers can send messages that go to one queue, many consumers can try to
+  receive data from one queue.
+
+* **Consumer** - Consuming has a similar meaning to receiving. A consumer is a
+  program that mostly waits to receive messages.
+
+Note that the producer, consumer, and broker do not have to reside on the same
+machine; indeed in most applications they don't.
 
 
 ## Getting Set Up
@@ -31,16 +62,8 @@ $ cd kanin-tutorials
 $ make compile
 ```
 
-All further instructions in the tutorials linked below are given from the
+All instructions in the tutorials are given from the
 context of the ``kanin-tutorials`` directory.
 
+Shall we begin?
 
-## The Tutorials
-
-Here are the LFE versions of the RabbitMQ Python tutorials:
-
-1. [Hello World](./01-tutorial-hello-world.md)
-1. [Work Queues](./02-tutorial-work-queues.md)
-1. [Publish-Subscribe](./03-tutorial-pubsub.md)
-1. [Routing](./04-tutorial-routing.md)
-1. [Topics](./05-tutorial-topics.md)
