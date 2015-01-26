@@ -2,10 +2,9 @@
 
 * [Introduction](README.md)
 * [Chapter 1 - Hello, World!](ch1/README.md)
-   * [Setup](ch1/1.md)
-   * [Sending](ch1/2.md)
-   * [Receiving](ch1/3.md)
-   * [Putting It All Together](ch1/4.md)
+   * [Sending](ch1/1.md)
+   * [Receiving](ch1/2.md)
+   * [Putting It All Together](ch1/3.md)
 * [Chapter 2 - Work Queues](ch2/README.md)
    * [Preparation](ch2/1.md)
    * [Round-robin Dispatching](ch2/2.md)
