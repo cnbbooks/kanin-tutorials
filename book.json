@@ -1,0 +1,24 @@
+{
+    "title": "The RabbitMQ Tutorials for LFE",
+    "description": "The Official RabbitMQ Tutorials ported to LFE",
+    "plugins": ["ga"],
+    "pluginsConfig": {
+        "fontSettings": {
+            "theme": "night",
+            "family": "serif",
+            "size": 1
+        },
+        "ga": {
+            "token": "UA-56071407-4"
+        }
+    },
+    "links": {
+        "sidebar": {
+            "Billo @ Github": "https://github.com/billosys/"
+        }
+    },
+    "pdf": {
+        "pageNumbers": true,
+        "paperSize": "a4"
+    }
+}
